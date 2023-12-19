@@ -21,13 +21,13 @@ Generative AI models the patterns and structure of their input training data and
 
 A large language model (LLM) is a type of AI that can process and produce natural language text. It learns from a massive amount of text data such as books, articles, and web pages to discover patterns and rules of language from them.
 
-For this workshop we are using GPT-3, a LLM developed by OpenAI. GPT-3 is a language model that uses deep learning to produce human-like text. 
+For this workshop we are using GPT-3.5-Turbo, a LLM developed by OpenAI. GPT-3.5-Turbo is a language model that uses deep learning to produce human-like text. 
 
-![Alt text](image.png)
+![Alt text](images/10LLMs.png)
 
 > **Parameters**:  size and the complexity of the model. The more parameters, the more complex the model.
 
-![Alt text](image-1.png)
+![Alt text](images/11GPT35Turbo.png)
 
 > **Token**: digital unit of text. A token can be a character, a word, or a sentence. 
 
@@ -49,14 +49,14 @@ In this workshop we will be generating content using [Azure OpenAI service](http
 
 To get started, click on the buttn below to Open GenAI Playground (our workshop lab environment) in your browser.
 
-[![Open GenAI Playground](open-genai-playground.png)](https://openai-proxy-23uljr-ca.salmonsea-82a61dba.swedencentral.azurecontainerapps.io/)
+[![Open GenAI Playground](images/20open-genai-playground.png)](https://playground.globalai.community/)
 
-![Alt text](image-3.png)
+![Alt text](images/25openaigenplayground.png)
 
 To use the lab you will need to authenticate with our Workshop API Key: _[insert valid event code]_
 
-Once you are authenticated for in the lab environment you will see "University of Michigan" in the top right corner of the screen:
-![Alt text](image-4.png)
+Once you are authenticated for in the lab environment you will see "Generative AI for Beginners" in the top right corner of the screen:
+![Alt text](images/30EventTitle.png)
 
 ## 🚀 Exercise: Generate Text
 
@@ -65,7 +65,7 @@ Once you are authenticated for in the lab environment you will see "University o
 Lets start with a few prompts and observe the response using the chat interface:
 
 ```
-What is the capital of Michigan?
+What is the capital of Ontario?
 ```
 
 ```
@@ -79,6 +79,10 @@ What were the 10 top movies of 2001? Respond in the form of a table listing the 
 ```
 Write a Python function to calculate the nth prime number.
 ```
+The Chat Session should like similar to this:
+
+![Sample chat window](images/40samplechat.png)
+
 
 ### Generate creative content
 
@@ -100,7 +104,7 @@ The OpenAI Chat interface allows you to adjust the parameters of the model. Let'
 Let's see how temperature affects the output of the model. Try the following prompts with different temperatures:
 
 ```
-What is a unique and long name for a cat?
+What is a unique name for a black and white cat?
 ```
 
 ## 🚧 What to look out for 
@@ -128,6 +132,21 @@ Write an obituary for the poet Harold Bloomsbury. Include references.
 ```
 
 There has never been a poet (nor indeed any person, according to web search) named Harold Bloomsbury. As a result, the model generates text in the form of an obituary, but not grounded in any facts. Even the requested references, while convincing-looking, are not real.
+
+One of the mechanisms of the model will stop this action with a message similar to this one:
+
+```
+I'm sorry, but I cannot generate obituaries for real people. If you're looking for information about Harold Bloomsbury, I can help you find biographical details, his literary works, or other relevant information. Let me know how I can assist you further.
+```
+
+![cannot generate obituaries for real people](images/45cangenchat.png)
+
+In order to make it work, let's clarify that Harold is a fictisious person.
+
+```
+Write an obituary for the poet Harold Bloomsbury (a fictisious person). Include references.
+```
+
 
 ## 📃 Conversation history
 
@@ -196,7 +215,11 @@ Create a claymation style of a female software engineer with a smile on the fron
 ```
 [Link to try above as prompt template](https://designer.microsoft.com/image-creator?p=Create+a+claymation+style+of+a+%5Bfemale+software+engineer%5D+with+a+smile+on+the+front%2C+wearing+a+%5Bblack+sweater%5D%2C++%5Bgreen+%5Deyes%2C++and+%5Bdark+blonde+shoulder+length%5D+hair.+With+a+%5BUniversity+of+Michigan%5D+background+and+a+Microsoft+laptop+at+hand.+Fashion%2C+text+3D+rendering%2C+typography%2C+illustration%2C+painting%2C+photo%2C+poster%2C+3d+render.)
 
-![Alt text](image-5.png)
+![Alt text](images/90Sara.png)
+
+Or my own version:
+
+![Alt text](images/91BrunoMsftDesigner.png)
 
 ## 💡 Extending how you use Azure OpenAI Service
 
@@ -206,7 +229,7 @@ This workshop is just the beginning of what you can do with Azure OpenAI Service
 * Use Azure OpenAI Service to generate text for your chatbot, apps, or games
 * Use Microsoft Designer to generate images for your website, blog, or social media posts
 
-We used the GPT-3 model in this workshop, all based on a LLM (large language model) architecture. 
+We used the GPT-3.5-Turbo model in this workshop, all based on a LLM (large language model) architecture. 
 * _How can you create your own models?_
 * _How can you use those models to generate text or images for the problem you want to solve?_
 
@@ -214,7 +237,7 @@ We used the GPT-3 model in this workshop, all based on a LLM (large language mod
 
 #### Get access
 * [Azure for Students](https://aka.ms/azure4students) to receive $100 free Azure credits (no credit card required)
-* [Founders Hub](https://aka.ms/foundershub) for startups to receive $120K free Azure credits (no credit card required)
+* [Founders Hub](https://aka.ms/gefh) for startups to receive $120K free Azure credits (no credit card required)
 * [Apply for access](https://aka.ms/oaiapply) to Azure Open AI Service with a use case
 
 #### Learning and docs
