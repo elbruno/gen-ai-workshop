@@ -8,7 +8,7 @@ This repository contains the content for a workshop on Generative AI utilizing A
 
 #### Optional
 
-- [Microsoft Account](https://account.microsoft.com/account) - for using [Bing Chat Bot](https://www.bing.com/chatbot) or [Microsoft Designer](https://www.microsoft.com/design/fluent/#/) for generating images during bonus exercise.
+- [Microsoft Account](https://account.microsoft.com/account) - for using [Microsoft Copilot](https://copilot.microsoft.com) or [Microsoft Designer](https://www.microsoft.com/design/fluent/#/) for generating images during bonus exercise.
 - [Azure Subscription](https://azure.microsoft.com/en-us/free/) - if you wish to continue to explore Azure services after the workshop.
 
 ## What is Generative AI?
@@ -41,13 +41,16 @@ Prompt engineering is the process of creating prompts that will produce the desi
 
 ## 💻 Getting Started
 
-In this workshop we will be generating content using [Azure OpenAI service](https://azure.microsoft.com/en-us/services/cognitive-services/openai-text-generation/), using the `gpt-35-turbo` model. To avoid the need for an Azure account, and access to the Azure OpenAI service, we will be using a lab environment that has been provisioned for this workshop.
+In this workshop we will be generating content using [Azure OpenAI service](https://azure.microsoft.com/en-us/services/cognitive-services/openai-text-generation/) or [Microsoft Copilot](https://copilot.microsoft.com/), using the `gpt-35-turbo` or `gpt-4`  model. 
+
+To avoid the need for an Azure account, and access to the Azure OpenAI service, we will be using a lab environment that has been provisioned for this workshop or the [Microsoft Copilot](https://copilot.microsoft.com/).
 
 > [**Azure**](https://azure.microsoft.com/en-us/): Microsoft's cloud computing platform
 
 > [**Azure OpenAI service**](https://azure.microsoft.com/en-us/services/cognitive-services/openai-text-generation/): a managed service for application use of generative AI models. It provides a simple API for generating text, and has built-in models to use. 
 
-To get started, click on the buttn below to Open GenAI Playground (our workshop lab environment) in your browser.
+## Option A - Open GenAI Playground 
+To get started, click on the button below to Open GenAI Playground (our workshop lab environment) in your browser.
 
 [![Open GenAI Playground](images/20open-genai-playground.png)](https://playground.globalai.community/)
 
@@ -57,6 +60,13 @@ To use the lab you will need to authenticate with our Workshop API Key: _[insert
 
 Once you are authenticated for in the lab environment you will see "Generative AI for Beginners" in the top right corner of the screen:
 ![Alt text](images/30EventTitle.png)
+
+## Option B - Microsoft Copilot
+
+To get started, click on the image below to Open Microsoft Copilot in your browser.
+
+[![Open Microsoft Copilot](images/26CopilotMicrosoft.png)](https://copilot.microsoft.com/)
+
 
 ## 🚀 Exercise: Generate Text
 
